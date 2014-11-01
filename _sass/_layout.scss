@@ -31,10 +31,8 @@ body {
 .rounded-button {
   height: 62px;
   font-size: 14px;
-  background-color:white;
-  color: $light-blue-text-color;
-  padding: 20px 40px;
-  border: none;
+  font-weight: bold;
+  padding: 20px 60px;
   border-radius: 31px;
 
   &:hover:not(:disabled) {
@@ -42,11 +40,42 @@ body {
   }
 }
 
+.white-button {
+  background-color:white;
+  color: $light-blue-text-color;
+  border: none;
+}
+
+.light-blue-transparent-button {
+  background-color: Transparent;
+  color: $light-blue-text-color;
+  border: 2px solid $light-blue-text-color;
+}
+
 .dark-content {
   color: $dark-text-color;
 }
 
-div.container {}
+.container {}
+
+.input-field {
+  opacity:.7;
+  font-size: 14px;
+  border: 2px solid $light-blue-text-color;
+  border-radius: 2px;
+  background-color: $dark-blue-background-color;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+  @include placeholder {
+    color: $light-blue-text-color;
+  }
+
+  &:focus {
+    opacity:1;
+  }
+}
 
 // Redo header
 //div.background-image {
@@ -89,14 +118,13 @@ div.header {
 }
 
 div.section {
-  h5 {
-    text-align: center;
-    padding-top:80px;
-    margin-bottom:80px;
-    @include media($mobile) {
-      padding-top:20px;
-      margin-bottom:20px;
-    }
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+
+  @include media($mobile) {
+    padding-top:20px;
+    padding-bottom:20px;
   }
 }
 
@@ -147,6 +175,14 @@ div#first {
 div#second {
   background-color: $light-yellow-background-color;
 
+  h5 {
+    margin-bottom:80px;
+
+    @include media($mobile) {
+      margin-bottom:20px;
+    }
+  }
+
   div#whoweare {
     div.grid-item {
       @include span-columns(6);
@@ -162,5 +198,51 @@ div#second {
       @include size(303px 256px);
       @include retina-image("../assets/simon", 303px 256px);
     }
+  }
+}
+
+#third {
+  background-color: $dark-blue-background-color;
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+  .socials {
+    margin-bottom: 60px;
+  }
+  .social {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .dribbble {
+    @include size(28px 28px);
+    @include retina-image("../assets/dribbble", 28px 28px);
+  }
+  .twitter {
+    @include size(28px 28px);
+    @include retina-image("../assets/twitter", 28px 28px);
+  }
+  .github {
+    @include size(28px 28px);
+    @include retina-image("../assets/github", 28px 28px);
+  }
+
+  input {
+    @include span-columns(6);
+    @include shift(3);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+
+    height: 60px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin-top: 40px;
   }
 }

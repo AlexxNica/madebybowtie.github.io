@@ -10,7 +10,7 @@ title: Bowtie
     <div class="logo"></div>
     <h1 class="title">CLASS ACT APPS</h1>
     <p class="subtitle">MADE IN STOCKHOLM BY BOWTIE</p>
-    <button class="header-button rounded-button">GET IN TOUCH</button>
+    <button class="header-button rounded-button white-button">GET IN TOUCH</button>
   </div>
   <div class="grid-wrapper" id="platforms">
     <div class="grid-item" id="ipad-item">
@@ -45,3 +45,40 @@ title: Bowtie
     </div>
   </div>
 </div>
+<div class="section" id="third">
+  <h5>TOUCH BASE WITH THE BEST IN TOWN</h5>
+  <div class="socials">
+    <a href="http://dribbble.com/madebybowtie" class="dribbble social"></a>
+    <a href="http://twitter.com/madebybowtie" class="twitter social"></a>
+    <a href="http://github.com/madebybowtie" class="github social"></a>
+  </div>
+  <h5>THE SLIGHLY MORE FORMAL WAY</h5>
+  <form action="https://shrieking-labyrinth-3556.herokuapp.com" method="post" id="contact-form" >
+    <div class="grid-wrapper">
+      <input type="text" name="email" class="input-field" placeholder="YOUR E-MAIL ADDRESS OR PHONE NUMBER" />
+      <input type="text" name="message" class="input-field" placeholder="WRITE BRIEFLY ABOUT YOUR PROJECT AND BUDGET" />
+    </div>
+    <button type="submit" class="rounded-button light-blue-transparent-button">SEND</button>
+  </form>
+</div>
+
+<script type='text/javascript'>
+    $("#contact-form").submit(function(event) {
+      event.preventDefault();
+
+      var $form = $(this),
+          url = $form.attr('action'),
+          email = $form.find('input[name="email"]').val(),
+          message = $form.find('input[name="message"]').val();
+
+
+      var posting = $.post(url, {
+        email: email,
+        message: message
+      });
+
+      posting.done(function(data) {
+
+      });
+    });
+</script>
