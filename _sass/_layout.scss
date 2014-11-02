@@ -77,47 +77,7 @@ body {
 
 .container {}
 
-// Redo header
-//div.background-image {
-  //@include size(1198px 470px);
-  //@include retina-image("../assets/sthlm", 1198px 470px);
-//}
-
-div.header {
-  text-align: center;
-  padding-top: 40px;
-  margin-bottom: 150px;
-  @include media($mobile) {
-    margin-bottom: 70px;
-  }
-
-  div.logo {
-    @include size(86px 51px);
-    @include retina-image("../assets/bowtie", 86px 51px);
-
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h1.title {
-    margin-top: 100px;
-    @include media($mobile) {
-      margin-top: 50px;
-    }
-
-    font-size: 30px;
-  }
-
-  p.subtitle {
-    font-size: 10px;
-  }
-
-  button.header-button {
-    margin-top: 40px;
-  }
-}
-
-div.section {
+.section {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
@@ -128,16 +88,16 @@ div.section {
   }
 }
 
-div.grid-wrapper {
+.grid-wrapper {
   @include outer-container;
 
-  div.grid-item {
-    div.grid-item-image {
+  .grid-item {
+    .grid-item-image {
       margin-left: auto;
       margin-right: auto;
     }
 
-    h4.grid-item-title {
+    .grid-item-title {
       margin-top: 30px;
       text-align: center;
 
@@ -146,18 +106,12 @@ div.grid-wrapper {
       }
     }
 
-    p.grid-item-subtitle {
+    .grid-item-subtitle {
       text-align: center;
-      width: 300px;
+      width: 280px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    p.grid-item-subtitle {
-      text-align: center;
-      width: 300px;
-      margin-left: auto;
-      margin-right: auto;
+      opacity: .8;
     }
 
     .grid-item-socials {
@@ -184,25 +138,84 @@ div.grid-wrapper {
   }
 }
 
-div#first {
+#first {
   background-color:$light-blue-background-color;
 
-  div#platforms {
-    div.grid-item {
+  .background-image {
+    @include size(1198px 470px);
+    @include retina-image("../assets/sthlm", 1198px 470px);
+
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    max-width: 100%;
+  }
+
+  .header {
+    position: relative;
+    z-index: 10;
+
+    margin-bottom: 150px;
+    @include media($mobile) {
+      margin-bottom: 70px;
+    }
+
+    .logo {
+      @include size(86px 51px);
+      @include retina-image("../assets/bowtie", 86px 51px);
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin-top: 100px;
+      @include media($mobile) {
+        margin-top: 50px;
+      }
+
+      font-size: 48px;
+      @include media($mobile) {
+        font-size: 34px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      @include media($mobile) {
+        font-size: 12px;
+      }
+    }
+
+    .header-button {
+      margin-top: 40px;
+    }
+  }
+
+  #platforms {
+    position: relative;
+    z-index: 10;
+
+    .grid-item {
       @include span-columns(4);
       @include media($mobile) {
         @include span-columns(4);
       }
     }
-    div#ipad-item div.grid-item-image {
+    #ipad-item div.grid-item-image {
       @include size(64px 128px);
       @include retina-image("../assets/ipad", 64px 128px);
     }
-    div#mac-item div.grid-item-image {
+    #mac-item div.grid-item-image {
       @include size(168px 116px);
       @include retina-image("../assets/mac", 168px 116px);
     }
-    div#iphone-item div.grid-item-image {
+    #iphone-item div.grid-item-image {
       @include size(64px 113px);
       @include retina-image("../assets/iphone", 64px 113px);
     }

@@ -78,142 +78,163 @@ body {
 .dark-content {
   color: #004450; }
 
-div.header {
-  text-align: center;
-  padding-top: 40px;
-  margin-bottom: 150px; }
-  @media screen and (max-width: 480px) {
-    div.header {
-      margin-bottom: 70px; } }
-  div.header div.logo {
-    height: 51px;
-    width: 86px;
-    background-image: url("../assets/bowtie.png");
-    margin-left: auto;
-    margin-right: auto; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div.header div.logo {
-        background-image: url("../assets/bowtie_2x.png");
-        background-size: 86px 51px; } }
-  div.header h1.title {
-    margin-top: 100px;
-    font-size: 30px; }
-    @media screen and (max-width: 480px) {
-      div.header h1.title {
-        margin-top: 50px; } }
-  div.header p.subtitle {
-    font-size: 10px; }
-  div.header button.header-button {
-    margin-top: 40px; }
-
-div.section {
+.section {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center; }
   @media screen and (max-width: 480px) {
-    div.section {
+    .section {
       padding-top: 20px;
       padding-bottom: 20px; } }
 
-div.grid-wrapper {
+.grid-wrapper {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  div.grid-wrapper:after {
+  .grid-wrapper:after {
     content: "";
     display: table;
     clear: both; }
-  div.grid-wrapper div.grid-item div.grid-item-image {
+  .grid-wrapper .grid-item .grid-item-image {
     margin-left: auto;
     margin-right: auto; }
-  div.grid-wrapper div.grid-item h4.grid-item-title {
+  .grid-wrapper .grid-item .grid-item-title {
     margin-top: 30px;
     text-align: center; }
     @media screen and (max-width: 480px) {
-      div.grid-wrapper div.grid-item h4.grid-item-title {
+      .grid-wrapper .grid-item .grid-item-title {
         margin-top: 15px; } }
-  div.grid-wrapper div.grid-item p.grid-item-subtitle {
+  .grid-wrapper .grid-item .grid-item-subtitle {
     text-align: center;
-    width: 300px;
+    width: 280px;
     margin-left: auto;
-    margin-right: auto; }
-  div.grid-wrapper div.grid-item p.grid-item-subtitle {
-    text-align: center;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto; }
-  div.grid-wrapper div.grid-item .grid-item-socials {
+    margin-right: auto;
+    opacity: .8; }
+  .grid-wrapper .grid-item .grid-item-socials {
     margin-top: 20px; }
-    div.grid-wrapper div.grid-item .grid-item-socials .social {
+    .grid-wrapper .grid-item .grid-item-socials .social {
       display: inline-block;
       margin-left: 8px;
       margin-right: 8px; }
-    div.grid-wrapper div.grid-item .grid-item-socials .dribbble {
+    .grid-wrapper .grid-item .grid-item-socials .dribbble {
       height: 28px;
       width: 28px;
       background-image: url("../assets/dribbble-avatar.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        div.grid-wrapper div.grid-item .grid-item-socials .dribbble {
+        .grid-wrapper .grid-item .grid-item-socials .dribbble {
           background-image: url("../assets/dribbble-avatar_2x.png");
           background-size: 28px 28px; } }
-    div.grid-wrapper div.grid-item .grid-item-socials .twitter {
+    .grid-wrapper .grid-item .grid-item-socials .twitter {
       height: 28px;
       width: 28px;
       background-image: url("../assets/twitter-avatar.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        div.grid-wrapper div.grid-item .grid-item-socials .twitter {
+        .grid-wrapper .grid-item .grid-item-socials .twitter {
           background-image: url("../assets/twitter-avatar_2x.png");
           background-size: 28px 28px; } }
-    div.grid-wrapper div.grid-item .grid-item-socials .github {
+    .grid-wrapper .grid-item .grid-item-socials .github {
       height: 28px;
       width: 28px;
       background-image: url("../assets/github-avatar.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        div.grid-wrapper div.grid-item .grid-item-socials .github {
+        .grid-wrapper .grid-item .grid-item-socials .github {
           background-image: url("../assets/github-avatar_2x.png");
           background-size: 28px 28px; } }
 
-div#first {
+#first {
   background-color: #00A8C6; }
-  div#first div#platforms div.grid-item {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    div#first div#platforms div.grid-item:last-child {
-      margin-right: 0; }
+  #first .background-image {
+    height: 470px;
+    width: 1198px;
+    background-image: url("../assets/sthlm.png");
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    max-width: 100%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #first .background-image {
+        background-image: url("../assets/sthlm_2x.png");
+        background-size: 1198px 470px; } }
+  #first .header {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 150px; }
     @media screen and (max-width: 480px) {
-      div#first div#platforms div.grid-item {
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 100%; }
-        div#first div#platforms div.grid-item:last-child {
-          margin-right: 0; } }
-  div#first div#platforms div#ipad-item div.grid-item-image {
-    height: 128px;
-    width: 64px;
-    background-image: url("../assets/ipad.png"); }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div#first div#platforms div#ipad-item div.grid-item-image {
-        background-image: url("../assets/ipad_2x.png");
-        background-size: 64px 128px; } }
-  div#first div#platforms div#mac-item div.grid-item-image {
-    height: 116px;
-    width: 168px;
-    background-image: url("../assets/mac.png"); }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div#first div#platforms div#mac-item div.grid-item-image {
-        background-image: url("../assets/mac_2x.png");
-        background-size: 168px 116px; } }
-  div#first div#platforms div#iphone-item div.grid-item-image {
-    height: 113px;
-    width: 64px;
-    background-image: url("../assets/iphone.png"); }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div#first div#platforms div#iphone-item div.grid-item-image {
-        background-image: url("../assets/iphone_2x.png");
-        background-size: 64px 113px; } }
+      #first .header {
+        margin-bottom: 70px; } }
+    #first .header .logo {
+      height: 51px;
+      width: 86px;
+      background-image: url("../assets/bowtie.png");
+      margin-left: auto;
+      margin-right: auto; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        #first .header .logo {
+          background-image: url("../assets/bowtie_2x.png");
+          background-size: 86px 51px; } }
+    #first .header h1 {
+      margin-top: 100px;
+      font-size: 48px; }
+      @media screen and (max-width: 480px) {
+        #first .header h1 {
+          margin-top: 50px; } }
+      @media screen and (max-width: 480px) {
+        #first .header h1 {
+          font-size: 34px; } }
+    #first .header p {
+      font-size: 14px; }
+      @media screen and (max-width: 480px) {
+        #first .header p {
+          font-size: 12px; } }
+    #first .header .header-button {
+      margin-top: 40px; }
+  #first #platforms {
+    position: relative;
+    z-index: 10; }
+    #first #platforms .grid-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #first #platforms .grid-item:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        #first #platforms .grid-item {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%; }
+          #first #platforms .grid-item:last-child {
+            margin-right: 0; } }
+    #first #platforms #ipad-item div.grid-item-image {
+      height: 128px;
+      width: 64px;
+      background-image: url("../assets/ipad.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        #first #platforms #ipad-item div.grid-item-image {
+          background-image: url("../assets/ipad_2x.png");
+          background-size: 64px 128px; } }
+    #first #platforms #mac-item div.grid-item-image {
+      height: 116px;
+      width: 168px;
+      background-image: url("../assets/mac.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        #first #platforms #mac-item div.grid-item-image {
+          background-image: url("../assets/mac_2x.png");
+          background-size: 168px 116px; } }
+    #first #platforms #iphone-item div.grid-item-image {
+      height: 113px;
+      width: 64px;
+      background-image: url("../assets/iphone.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        #first #platforms #iphone-item div.grid-item-image {
+          background-image: url("../assets/iphone_2x.png");
+          background-size: 64px 113px; } }
 
 div#second {
   background-color: #FAF4EB; }
