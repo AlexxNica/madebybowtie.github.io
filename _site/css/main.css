@@ -86,6 +86,11 @@ body {
     .section {
       padding-top: 20px;
       padding-bottom: 20px; } }
+  .section h5 {
+    margin-bottom: 80px; }
+    @media screen and (max-width: 480px) {
+      .section h5 {
+        margin-bottom: 20px; } }
 
 .grid-wrapper {
   max-width: 68em;
@@ -235,80 +240,117 @@ body {
           background-image: url("../assets/iphone_2x.png");
           background-size: 64px 113px; } }
 
-div#second {
-  background-color: #FAF4EB; }
-  div#second h5 {
-    margin-bottom: 80px; }
-    @media screen and (max-width: 480px) {
-      div#second h5 {
-        margin-bottom: 20px; } }
-  div#second div#whoweare div.grid-item {
+#second {
+  background-color: #EBFAFC; }
+  #second #howwemakeit div.grid-item {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
-    div#second div#whoweare div.grid-item:last-child {
+    width: 31.76157%; }
+    #second #howwemakeit div.grid-item:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
-      div#second div#whoweare div.grid-item {
+      #second #howwemakeit div.grid-item {
         float: left;
         display: block;
         margin-right: 7.42297%;
         width: 100%; }
-        div#second div#whoweare div.grid-item:last-child {
+        #second #howwemakeit div.grid-item:last-child {
           margin-right: 0; } }
-  div#second div#whoweare div#marcus-item div.grid-item-image {
+  #second #howwemakeit #design-item .grid-item-image {
+    height: 141px;
+    width: 177px;
+    background-image: url("../assets/dev.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #second #howwemakeit #design-item .grid-item-image {
+        background-image: url("../assets/dev_2x.png");
+        background-size: 177px 141px; } }
+  #second #howwemakeit #magic-item .grid-item-image {
+    height: 141px;
+    width: 177px;
+    background-image: url("../assets/dev.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #second #howwemakeit #magic-item .grid-item-image {
+        background-image: url("../assets/dev_2x.png");
+        background-size: 177px 141px; } }
+  #second #howwemakeit #development-item .grid-item-image {
+    height: 141px;
+    width: 177px;
+    background-image: url("../assets/dev.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #second #howwemakeit #development-item .grid-item-image {
+        background-image: url("../assets/dev_2x.png");
+        background-size: 177px 141px; } }
+
+div#third {
+  background-color: #FAF4EB; }
+  div#third div#whoweare div.grid-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    div#third div#whoweare div.grid-item:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      div#third div#whoweare div.grid-item {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        div#third div#whoweare div.grid-item:last-child {
+          margin-right: 0; } }
+  div#third div#whoweare div#marcus-item div.grid-item-image {
     height: 256px;
     width: 303px;
     background-image: url("../assets/marcus.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div#second div#whoweare div#marcus-item div.grid-item-image {
+      div#third div#whoweare div#marcus-item div.grid-item-image {
         background-image: url("../assets/marcus_2x.png");
         background-size: 303px 256px; } }
-  div#second div#whoweare div#simon-item div.grid-item-image {
+  div#third div#whoweare div#simon-item div.grid-item-image {
     height: 256px;
     width: 303px;
     background-image: url("../assets/simon.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      div#second div#whoweare div#simon-item div.grid-item-image {
+      div#third div#whoweare div#simon-item div.grid-item-image {
         background-image: url("../assets/simon_2x.png");
         background-size: 303px 256px; } }
 
-#third {
+#fourth {
   background-color: #004450; }
-  #third h5 {
+  #fourth h5 {
     margin-bottom: 20px; }
-  #third .socials {
+  #fourth .socials {
     margin-bottom: 60px; }
-  #third .social {
+  #fourth .social {
     display: inline-block;
     margin-left: 8px;
     margin-right: 8px; }
-  #third .dribbble {
+  #fourth .dribbble {
     height: 28px;
     width: 28px;
     background-image: url("../assets/dribbble.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      #third .dribbble {
+      #fourth .dribbble {
         background-image: url("../assets/dribbble_2x.png");
         background-size: 28px 28px; } }
-  #third .twitter {
+  #fourth .twitter {
     height: 28px;
     width: 28px;
     background-image: url("../assets/twitter.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      #third .twitter {
+      #fourth .twitter {
         background-image: url("../assets/twitter_2x.png");
         background-size: 28px 28px; } }
-  #third .github {
+  #fourth .github {
     height: 28px;
     width: 28px;
     background-image: url("../assets/github.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      #third .github {
+      #fourth .github {
         background-image: url("../assets/github_2x.png");
         background-size: 28px 28px; } }
-  #third input {
+  #fourth input {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -316,16 +358,16 @@ div#second {
     margin-left: 25.58941%;
     height: 60px;
     margin-bottom: 40px; }
-    #third input:last-child {
+    #fourth input:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
-      #third input {
+      #fourth input {
         float: left;
         display: block;
         margin-right: 7.42297%;
         width: 100%;
         margin-left: 0%; }
-        #third input:last-child {
+        #fourth input:last-child {
           margin-right: 0; } }
-  #third button {
+  #fourth button {
     margin-top: 40px; }

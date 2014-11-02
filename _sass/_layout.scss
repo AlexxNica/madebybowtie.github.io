@@ -86,6 +86,14 @@ body {
     padding-top:20px;
     padding-bottom:20px;
   }
+
+  h5 {
+    margin-bottom:80px;
+
+    @include media($mobile) {
+      margin-bottom:20px;
+    }
+  }
 }
 
 .grid-wrapper {
@@ -223,16 +231,33 @@ body {
   }
 }
 
-div#second {
-  background-color: $light-yellow-background-color;
+#second {
+  background-color: $bone-white-background-color;
 
-  h5 {
-    margin-bottom:80px;
-
-    @include media($mobile) {
-      margin-bottom:20px;
+  #howwemakeit {
+    div.grid-item {
+      @include span-columns(4);
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+    }
+    #design-item .grid-item-image {
+      @include size(177px 141px);
+      @include retina-image("../assets/dev", 177px 141px);
+    }
+    #magic-item .grid-item-image {
+      @include size(177px 141px);
+      @include retina-image("../assets/dev", 177px 141px);
+    }
+    #development-item .grid-item-image {
+      @include size(177px 141px);
+      @include retina-image("../assets/dev", 177px 141px);
     }
   }
+}
+
+div#third {
+  background-color: $light-yellow-background-color;
 
   div#whoweare {
     div.grid-item {
@@ -252,7 +277,7 @@ div#second {
   }
 }
 
-#third {
+#fourth {
   background-color: $dark-blue-background-color;
 
   h5 {
