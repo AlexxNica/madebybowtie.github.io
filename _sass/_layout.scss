@@ -25,6 +25,14 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
 /**
  * General element
  */
@@ -188,7 +196,6 @@ body {
         margin-top: 50px;
       }
 
-      font-size: 48px;
       @include media($mobile) {
         font-size: 34px;
       }
@@ -278,6 +285,29 @@ div#third {
 }
 
 #fourth {
+  background-color: $bone-white-background-color;
+
+  p {
+    max-width: 540px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    @include media($mobile) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 30px;
+    @include media($mobile) {
+      margin-top: 20px;
+    }
+  }
+}
+
+#fifth {
   background-color: $dark-blue-background-color;
 
   h5 {
