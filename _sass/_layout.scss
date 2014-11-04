@@ -27,10 +27,25 @@ body {
 
 h1 {
   font-size: 48px;
+
+  @include media($mobile) {
+    font-size: 34px;
+  }
 }
 
 h2 {
   font-size: 38px;
+
+  @include media($mobile) {
+    font-size: 28px;
+  }
+}
+
+p {
+  font-size: 14px;
+  @include media($mobile) {
+    font-size: 12px;
+  }
 }
 
 /**
@@ -162,7 +177,7 @@ h2 {
     top: 200px;
     left: 50%;
     margin-left: -599px;
-    overflow: hidden;
+
   }
 
   .background-image {
@@ -171,6 +186,7 @@ h2 {
 
     opacity: .7;
     max-width: 100%;
+    overflow: hidden;
   }
 
   .header {
@@ -194,17 +210,6 @@ h2 {
       margin-top: 80px;
       @include media($mobile) {
         margin-top: 50px;
-      }
-
-      @include media($mobile) {
-        font-size: 34px;
-      }
-    }
-
-    p {
-      font-size: 14px;
-      @include media($mobile) {
-        font-size: 12px;
       }
     }
 
@@ -316,6 +321,9 @@ div#third {
 
   .socials {
     margin-bottom: 60px;
+    @include media($mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   .social {
@@ -334,6 +342,16 @@ div#third {
   .github {
     @include size(28px 28px);
     @include retina-image("../assets/github", 28px 28px);
+  }
+
+  .mail-logo {
+    @include size(72px 97px);
+    @include retina-image("../assets/mail", 72px 97px);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
   }
 
   input {
