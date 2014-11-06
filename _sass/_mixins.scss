@@ -1,0 +1,10 @@
+@mixin retina($filename, $background-size, $extension: png, $retina-filename: null, $retina-suffix: "@2x") {
+  background-image: url("#{$filename}.#{$extension}");
+
+  @include hidpi {
+    background-image: url("#{$filename}#{$retina-suffix}.#{$extension}");
+  }
+
+  background-size: $background-size;
+  @include size($background-size);
+}

@@ -1,6 +1,7 @@
 @import "bourbon/bourbon";
 @import "grid-settings";
 @import "neat/neat";
+@import "mixins";
 
 /**
  * Reset some basic elements
@@ -154,16 +155,13 @@ p {
         margin-right: 8px;
       }
       .dribbble {
-        @include size(28px 28px);
-        @include retina-image("../assets/dribbble-avatar", 28px 28px);
+        @include retina("../assets/dribbble-avatar", 28px 28px);
       }
       .twitter {
-        @include size(28px 28px);
-        @include retina-image("../assets/twitter-avatar", 28px 28px);
+        @include retina("../assets/twitter-avatar", 28px 28px);
       }
       .github {
-        @include size(28px 28px);
-        @include retina-image("../assets/github-avatar", 28px 28px);
+        @include retina("../assets/github-avatar", 28px 28px);
       }
     }
   }
@@ -182,8 +180,7 @@ p {
   }
 
   .background-image {
-    @include size(1198px 470px);
-    @include retina-image("../assets/sthlm", 1198px 470px);
+    @include retina("../assets/sthlm", 1198px 470px);
 
     opacity: .7;
     max-width: 100%;
@@ -200,8 +197,7 @@ p {
     }
 
     .logo {
-      @include size(86px 51px);
-      @include retina-image("../assets/bowtie", 86px 51px);
+      @include retina("../assets/bowtie", 86px 51px);
 
       margin-left: auto;
       margin-right: auto;
@@ -243,16 +239,13 @@ p {
       }
     }
     #ipad-item div.grid-item-image {
-      @include size(64px 128px);
-      @include retina-image("../assets/ipad", 64px 128px);
+      @include retina("../assets/illustration-ipad", 200px 160px);
     }
     #mac-item div.grid-item-image {
-      @include size(168px 116px);
-      @include retina-image("../assets/mac", 168px 116px);
+      @include retina("../assets/illustration-macbook", 200px 160px);
     }
     #iphone-item div.grid-item-image {
-      @include size(64px 113px);
-      @include retina-image("../assets/iphone", 64px 113px);
+      @include retina("../assets/illustration-iphone", 200px 160px);
     }
   }
 }
@@ -268,16 +261,13 @@ p {
       }
     }
     #design-item .grid-item-image {
-      @include size(177px 141px);
-      @include retina-image("../assets/dev", 177px 141px);
+      @include retina("../assets/illustration-design", 200px 160px);
     }
     #magic-item .grid-item-image {
-      @include size(177px 141px);
-      @include retina-image("../assets/dev", 177px 141px);
+      @include retina("../assets/illustration-magic", 200px 160px);
     }
     #development-item .grid-item-image {
-      @include size(177px 141px);
-      @include retina-image("../assets/dev", 177px 141px);
+      @include retina("../assets/illustration-development", 200px 160px);
     }
   }
 }
