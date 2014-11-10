@@ -147,25 +147,6 @@ p {
       margin-right: auto;
       opacity: .8;
     }
-
-    .grid-item-socials {
-      margin-top: 20px;
-
-      .social {
-        display: inline-block;
-        margin-left: 8px;
-        margin-right: 8px;
-      }
-      .dribbble {
-        @include retina("../assets/dribbble-avatar", 28px 28px);
-      }
-      .twitter {
-        @include retina("../assets/twitter-avatar", 28px 28px);
-      }
-      .github {
-        @include retina("../assets/github-avatar", 28px 28px);
-      }
-    }
   }
 }
 
@@ -264,21 +245,40 @@ p {
   }
 }
 
-div#third {
+#third {
   background-color: $light-yellow-background-color;
 
-  div#whoweare {
-    div.grid-item {
+  #whoweare {
+    .grid-item {
       @include span-columns(6);
       @include media($mobile) {
         @include span-columns(4);
       }
     }
-    div#marcus-item div.grid-item-image {
+    #marcus-item .grid-item-image {
       @include retina("../assets/marcus", 303px 256px);
     }
-    div#simon-item div.grid-item-image {
+    #simon-item .grid-item-image {
       @include retina("../assets/simon", 303px 256px);
+    }
+
+    .grid-item-socials {
+      margin-top: 20px;
+
+      .social {
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .dribbble {
+        @include retina("../assets/dribbble-avatar", 28px 28px);
+      }
+      .twitter {
+        @include retina("../assets/twitter-avatar", 28px 28px);
+      }
+      .github {
+        @include retina("../assets/github-avatar", 28px 28px);
+      }
     }
   }
 }
@@ -355,11 +355,24 @@ div#third {
       @include shift(0);
     }
 
+    font-size: 12px;
+
     height: 60px;
     margin-bottom: 40px;
   }
 
   button {
     margin-top: 40px;
+  }
+
+  .email-text {
+    margin-top: 40px;
+    color: $light-blue-text-color;
+    font-size: 12px;
+
+    a {
+      color : $light-text-color;
+      text-decoration: none;
+    }
   }
 }
