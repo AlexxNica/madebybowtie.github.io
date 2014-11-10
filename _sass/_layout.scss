@@ -307,9 +307,9 @@ p {
 }
 
 #fifth {
-  background-color: $dark-blue-background-color;
-
+  position: relative;
   min-height: 100vh;
+  background-color: $dark-blue-background-color;
 
   h5 {
     margin-bottom: 20px;
@@ -371,8 +371,19 @@ p {
     font-size: 12px;
 
     a {
-      color : $light-text-color;
+      color: $light-text-color;
       text-decoration: none;
     }
+  }
+
+  .made-by {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+
+    color: $light-blue-text-color;
+    font-size: 11px;
   }
 }
