@@ -59,6 +59,12 @@ p {
   font-weight: bold;
   padding: 20px 60px;
   border-radius: 31px;
+  outline: none;
+
+  @include transition(all .1s linear);
+  &:active {
+    @include transform(scale(1.02));
+  }
 
   &:hover:not(:disabled) {
     cursor: pointer;
