@@ -64,6 +64,8 @@ p {
   &:hover:not(:disabled) {
     cursor: pointer;
   }
+
+  outline: none;
 }
 
 .white-button {
