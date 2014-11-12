@@ -97,11 +97,12 @@ title: Bowtie
   <h5>THE SLIGHLY MORE FORMAL WAY</h5>
   <div class="mail-logo"></div>
   <form action="https://shrieking-labyrinth-3556.herokuapp.com" method="post" id="contact-form" >
-    <div class="grid-wrapper">
+    <div class="grid-wrapper contact-form-inputs">
       <input type="text" name="email" class="input-field" placeholder="YOUR E-MAIL ADDRESS OR PHONE NUMBER" />
       <input type="textarea" name="message" class="input-field" placeholder="WRITE BRIEFLY ABOUT YOUR PROJECT AND BUDGET" />
     </div>
-    <button type="submit" class="rounded-button light-blue-transparent-button">SEND</button>
+    <button type="submit" class="rounded-button light-blue-transparent-button contact-form-button">SEND</button>
+    <div class="light-blue-transparent-button contact-form-thanks contact-form-thanks--hidden">Thank you!</div>
   </form>
   <p class="email-text">
     IF YOU’D PREFER TO SEND AN EMAIL, <a href="mailto:simon@madebybowtie.com">GO FOR IT</a>
@@ -126,8 +127,13 @@ title: Bowtie
         message: message
       });
 
-      posting.done(function(data) {
+      $('#contact-form').addClass('contact-form--submitted');
+      setTimeout(function () {
+        $('.contact-form-button').addClass('contact-form-button--bounce');
+        $('.contact-form-thanks--hidden').removeClass('contact-form-thanks--hidden');
+      }, 500);
 
+      posting.done(function(data) {
       });
     });
 

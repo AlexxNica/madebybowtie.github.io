@@ -50,13 +50,18 @@ p {
   }
 }
 
+.bold-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /**
  * General element
  */
 .rounded-button {
+  @extend .bold-text;
   height: 62px;
-  font-size: 14px;
-  font-weight: bold;
   padding: 20px 60px;
   border-radius: 31px;
   outline: none;
@@ -101,6 +106,40 @@ p {
 
   &:focus {
     opacity:1;
+  }
+}
+
+
+.contact-form-inputs,
+.contact-form-thanks,
+.contact-form-button {
+  @include transition(all .5s ease-in-out);
+  opacity: 1;
+}
+.contact-form--submitted {
+  .contact-form-inputs {
+    @include transform(scale(.5));
+    opacity: 0;
+  }
+  .contact-form-button {
+    @include transform(translateY(-250%));
+
+    &--bounce {
+      @include transform(translateY(-250%) scale(3));
+    @include transition(all .3s ease-in-out);
+      opacity: 0;
+    }
+  }
+}
+.contact-form-thanks {
+  @extend .bold-text;
+  border: none;
+  height: 62px;
+  margin-top: -40px;
+  @include transform(translateY(-250%));
+
+  &--hidden {
+    opacity: 0;
   }
 }
 
