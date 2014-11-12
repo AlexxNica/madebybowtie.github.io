@@ -260,6 +260,13 @@ p {
       }
       @include media($mobile) {
         @include span-columns(4);
+        .grid-item-image,
+        .grid-item-description {
+          .grid-item-subtitle,
+          .grid-item-title {
+            text-align: center;
+          }
+        }
       }
     }
     #design-item .grid-item-image {
@@ -284,15 +291,25 @@ p {
         @include span-columns(4);
       }
     }
+    .grid-item-image {
+      max-width: 70%;
+      background-repeat: no-repeat;
+      width: 100%;
+      padding-bottom: 60%;
+      height: 0;
+    }
     #marcus-item .grid-item-image {
-      @include retina("../assets/marcus", 303px 256px);
+      @include retina("../assets/marcus", 100%);
     }
     #simon-item .grid-item-image {
-      @include retina("../assets/simon", 303px 256px);
+      @include retina("../assets/simon", 100%);
     }
 
     .grid-item-socials {
       margin-top: 20px;
+      @include media($mobile) {
+        margin: 10px 0 20px 0;
+      }
 
       .social {
         display: inline-block;
