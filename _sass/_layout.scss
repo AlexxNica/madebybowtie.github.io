@@ -396,6 +396,11 @@ p {
     @include span-columns(6);
     @include shift(3);
 
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+
     @include media($mobile) {
       @include span-columns(4);
       @include shift(0);
