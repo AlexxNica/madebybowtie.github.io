@@ -121,6 +121,13 @@ title: Bowtie
           email = $form.find('input[name="email"]').val(),
           message = $form.find('input[name="message"]').val();
 
+      if (!email || !message) {
+        $('.contact-form-button').addClass('contact-form-button--shake');
+        setTimeout(function () {
+          $('.contact-form-button').removeClass('contact-form-button--shake');
+        }, 500);
+        return;
+      }
 
       var posting = $.post(url, {
         email: email,

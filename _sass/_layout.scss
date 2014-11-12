@@ -113,8 +113,16 @@ p {
 .contact-form-inputs,
 .contact-form-thanks,
 .contact-form-button {
-  @include transition(all .5s ease-in-out);
   opacity: 1;
+}
+.contact-form-inputs,
+.contact-form-thanks {
+  @include transition(all .5s ease-in-out);
+}
+.contact-form-button {
+  &--shake {
+    @include animation(shake 0.5s ease-in);
+  }
 }
 .contact-form--submitted {
   .contact-form-inputs {
@@ -123,10 +131,11 @@ p {
   }
   .contact-form-button {
     @include transform(translateY(-250%));
+    @include transition(all .5s ease-in-out);
 
     &--bounce {
       @include transform(translateY(-250%) scale(3));
-    @include transition(all .3s ease-in-out);
+      @include transition(all .3s ease-in-out);
       opacity: 0;
     }
   }
@@ -140,6 +149,23 @@ p {
 
   &--hidden {
     opacity: 0;
+  }
+}
+@include keyframes(shake) {
+  0% {
+    @include transform(translateX(0));
+  }
+  25% {
+    @include transform(translateX(-20px));
+  }
+  50% {
+    @include transform(translateX(20px));
+  }
+  75% {
+    @include transform(translateX(-20px));
+  }
+  100% {
+    @include transform(translateX(0));
   }
 }
 
