@@ -1,4 +1,151 @@
 ---
-layout: splash
+layout: default
 title: Bowtie
 ---
+
+<div class="section" id="first">
+  <div class="background-image"></div>
+  <div class="header">
+    <div class="logo"></div>
+    <h1>CLASS ACT APPS</h1>
+    <p>MADE IN STOCKHOLM BY BOWTIE</p>
+    <button class="rounded-button white-button" id="header-button">GET IN TOUCH</button>
+  </div>
+  <div class="grid-wrapper" id="platforms">
+    <div class="grid-item" id="ipad-item">
+      <div class="grid-item-image"></div>
+      <h4 class="grid-item-title">iPAD</h4>
+      <p class="grid-item-subtitle">Make use of iPhones bigger brother. Larger screen sets the scene for even greater experiences.</p>
+    </div>
+    <div class="grid-item" id="iphone-item">
+      <div class="grid-item-image"></div>
+      <h4 class="grid-item-title">iPHONE</h4>
+      <p class="grid-item-subtitle">The go to platform for great user experiences and visual greatness. In addition a remarkable library of amazing apps.</p>
+    </div>
+  </div>
+</div>
+<div class="section dark-content" id="second">
+  <h5>HOW WE MAKE IT</h5>
+  <div class="grid-wrapper" id="howwemakeit">
+    <div class="grid-item" id="design-item">
+      <div class="grid-item-image"></div>
+      <div class="grid-item-description">
+        <h4 class="grid-item-title">INTERFACE DESIGN</h4>
+        <p class="grid-item-subtitle">Everything starts with a neat solution to a problem. It ends with stunning visuals and jaw dropping graphics.</p>
+      </div>
+    </div>
+    <div class="grid-item" id="magic-item">
+      <div class="grid-item-image"></div>
+      <div class="grid-item-description">
+        <h4 class="grid-item-title">MAGIC</h4>
+        <p class="grid-item-subtitle">We praise the magic touch of animations, great transitions and well produced details that goes beyond the pixels. It's magical.</p>
+      </div>
+    </div>
+    <div class="grid-item" id="development-item">
+      <div class="grid-item-image"></div>
+      <div class="grid-item-description">
+        <h4 class="grid-item-title">DEVELOPMENT</h4>
+        <p class="grid-item-subtitle">What makes an app great is the way it's put together in beautiful hand crafted code. One line at the time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section dark-content" id="third">
+  <h5>WHO WE ARE</h5>
+  <div class="grid-wrapper" id="whoweare">
+    <div class="grid-item" id="marcus-item">
+      <div class="grid-item-image"></div>
+      <h4 class="grid-item-title">MARCUS GELLERMARK</h4>
+      <p class="grid-item-subtitle">Designer by heart, product developer by experience and LEGO nerd since birth.</p>
+      <div class="grid-item-socials">
+        <a href="http://dribbble.com/gellermark" target="_blank" class="dribbble social"></a>
+        <a href="http://twitter.com/gellermark" target="_blank" class="twitter social"></a>
+      </div>
+    </div>
+    <div class="grid-item" id="simon-item">
+      <div class="grid-item-image"></div>
+      <h4 class="grid-item-title">SIMON BLOMMEGÅRD</h4>
+      <p class="grid-item-subtitle">The programmer, skier & jägermeister drinker of the duo.</p>
+      <div class="grid-item-socials">
+        <a href="http://github.com/blommegard" target="_blank" class="github social"></a>
+        <a href="http://twitter.com/blommegard" target="_blank" class="twitter social"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section dark-content" id="fourth">
+  <h5>THIS IS BOWTIE</h5>
+  <h2>LOVE AFFAIRS</h2>
+  <p>
+    We are Bowtie, a newborn App Creation Studio based in Stockholm. Together we have serveral years of experience in the mobile app creation industry. Both inside some of the biggest startups in Sweden but also as consultants for some of the worlds biggest and most loved brands.
+  </p>
+  <p>
+    We love what we do. You can easily understand that when you use one of our apps. We strive for producing even more, better and truly class act products. That is the very reason behind why we started Bowtie. Our focus is perfection, cutting edge results and products that will be loved by users.
+  </p>
+  <p>
+    By hiring us for your projects you aren’t just getting yet anther pair of consultants, that leaves with a handoff by the end of the project, we believe in handshakes and long lasting relations.
+  </p>
+</div>
+<div class="section" id="fifth">
+  <h5>TOUCH BASE WITH THE BEST IN TOWN</h5>
+  <div class="socials">
+    <a href="http://dribbble.com/gellermark" target="_blank" class="dribbble social"></a>
+    <a href="http://twitter.com/madebybowtie" target="_blank" class="twitter social"></a>
+    <a href="http://github.com/madebybowtie" target="_blank" class="github social"></a>
+  </div>
+  <h5>THE SLIGHLY MORE FORMAL WAY</h5>
+  <div class="mail-logo"></div>
+  <form action="https://shrieking-labyrinth-3556.herokuapp.com" method="post" id="contact-form" >
+    <div class="grid-wrapper contact-form-inputs">
+      <input type="text" name="email" class="input-field" placeholder="YOUR E-MAIL ADDRESS OR PHONE NUMBER" />
+      <input type="textarea" name="message" class="input-field" placeholder="WRITE BRIEFLY ABOUT YOUR PROJECT AND BUDGET" />
+    </div>
+    <button type="submit" class="rounded-button light-blue-transparent-button contact-form-button">SEND</button>
+    <div class="light-blue-transparent-button contact-form-thanks contact-form-thanks--hidden">Thank you!</div>
+  </form>
+  <p class="email-text">
+    IF YOU’D PREFER TO SEND AN EMAIL, <a href="mailto:simon@madebybowtie.com">GO FOR IT</a>
+  </p>
+  <p class="made-by">
+    MADE IN SWEDEN BY BOWTIE AB
+  </p>
+</div>
+
+<script type='text/javascript'>
+    $("#contact-form").submit(function(event) {
+      event.preventDefault();
+
+      var $form = $(this),
+          url = $form.attr('action'),
+          email = $form.find('input[name="email"]').val(),
+          message = $form.find('input[name="message"]').val();
+
+      if (!email || !message) {
+        $('.contact-form-button').addClass('contact-form-button--shake');
+        setTimeout(function () {
+          $('.contact-form-button').removeClass('contact-form-button--shake');
+        }, 500);
+        return;
+      }
+
+      var posting = $.post(url, {
+        email: email,
+        message: message
+      });
+
+      $('#contact-form').addClass('contact-form--submitted');
+      setTimeout(function () {
+        $('.contact-form-button').addClass('contact-form-button--bounce');
+        $('.contact-form-thanks--hidden').removeClass('contact-form-thanks--hidden');
+      }, 500);
+
+      posting.done(function(data) {
+      });
+    });
+
+    $("#header-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#fifth").offset().top
+    }, 500);
+});
+</script>
