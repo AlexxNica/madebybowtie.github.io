@@ -236,12 +236,13 @@ p {
     background-position: center center;
     position: absolute;
     width: 100%;
-    height: 90%;
-    margin-top: 8%;
+    top:200px;
 
     opacity: .7;
-    max-width: 100%;
-    overflow: hidden;
+
+    @include media($mobile) {
+      top:100px;
+    }
   }
 
   .header {
@@ -250,7 +251,7 @@ p {
 
     margin-bottom: 130px;
     @include media($mobile) {
-      margin-bottom: 70px;
+      margin-bottom: 100px;
     }
 
     .logo {
