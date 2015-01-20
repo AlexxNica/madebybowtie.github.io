@@ -109,6 +109,10 @@ p {
   }
 }
 
+.contact-form-inputs {
+	position: relative;
+	z-index: 20;
+}
 
 .contact-form-inputs,
 .contact-form-thanks,
@@ -146,6 +150,9 @@ p {
   height: 62px;
   margin-top: -40px;
   @include transform(translateY(-250%));
+
+	position: relative;
+	z-index: 10;
 
   &--hidden {
     opacity: 0;
