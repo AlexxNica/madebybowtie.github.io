@@ -423,6 +423,32 @@ p {
       margin-top: 20px;
     }
   }
+
+  .clients-header {
+    margin-top:60px;
+    margin-bottom:60px;
+
+    @include media($mobile) {
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+  }
+
+  .client {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .klarna {
+    @include retina("../assets/client-klarna", 200px 40px);
+  }
+  .tink {
+    @include retina("../assets/client-tink", 200px 40px);
+  }
+  .viaplay {
+    @include retina("../assets/client-viaplay", 200px 40px);
+  }
 }
 
 #fifth {
