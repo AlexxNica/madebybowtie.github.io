@@ -288,7 +288,7 @@ p {
     z-index: 10;
 
     @include media($tablet) {
-      padding-top: 100px;
+      padding-top: 120px;
     }
     @include media($mobile) {
       padding-top: 0;
