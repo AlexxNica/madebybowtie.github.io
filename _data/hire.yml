@@ -1,0 +1,20 @@
+- dates: Mar 9-Mar 13
+  development_booked: true
+  design_booked: true
+
+- dates: Mar 16-Mar 20
+  development_booked: true
+  design_booked: true
+
+- dates: Mar 23-Mar 27
+  development_booked: true
+  design_booked: true
+
+- dates: Mar 30-Apr 3
+  development_booked: false
+  design_booked: true
+
+- dates: Apr 6-Apr 10
+  development_booked: false
+  design_booked: false
+

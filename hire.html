@@ -1,0 +1,51 @@
+---
+layout: default
+title: Hire Bowtie
+---
+
+<div class="section" id="first">
+  <div>
+    We are available for iOS, Visual Design and illustration consulting.
+
+    <h5>RATES</h5>
+    The rates depends on client, project length and the amount of work, but usualy ends up to 750-1000 SEK per hour. All time needs to be booked ahead of time. Minimum of 8 hour commitment.
+
+    <h5>AVAILABILITY</h5>
+
+    <table class="avabilitiy">
+        <tr>
+          <th></th>
+          <th>Development</th>
+          <th>Design</th>
+        </tr>
+
+        {% for week in site.data.hire %}
+        <tr>
+          <td>
+            {{ week.dates }}
+          </td>
+          <td>
+            {% if week.development_booked %}
+              Booked
+            {% else %}
+              <a href="mailto:{{ site.email }}?subject=I want to hire Bowtie for development work {{ week.dates }} ">Available</a>
+            {% endif %}
+          </td>
+          <td>
+            {% if week.design_booked %}
+              Booked
+            {% else %}
+              <a href="mailto:{{ site.email }}?subject=I want to hire Bowtie for design work {{ week.dates }} ">Available</a>
+            {% endif %}
+          </td>
+          </tr>
+        {% endfor %}
+
+    </table>
+
+    <h5>LEGAL</h5>
+    You will need to sign our consulting agreement, it has confidentiality agreement included. <br />
+
+    To schedule work or for additional information, <a href="mailto:{{ site.email }}">email us</a>.
+  </div>
+</div>
