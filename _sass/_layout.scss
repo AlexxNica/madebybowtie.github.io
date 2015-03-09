@@ -56,6 +56,10 @@ p {
   font-weight: bold;
 }
 
+.apple {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 /**
  * General element
  */
@@ -283,17 +287,47 @@ p {
     position: relative;
     z-index: 10;
 
+    @include media($tablet) {
+      padding-top: 100px;
+    }
+    @include media($mobile) {
+      padding-top: 0;
+    }
+
     .grid-item {
-      @include span-columns(6);
+      @include span-columns(4);
+      @include media($tablet) {
+        @include span-columns(8);
+        .grid-item-image,
+        .grid-item-description {
+          display: inline-block;
+          vertical-align: middle;
+
+          .grid-item-subtitle,
+          .grid-item-title {
+            text-align: left;
+          }
+        }
+        .grid-item-title {
+          margin: 10px 0;
+        }
+      }
       @include media($mobile) {
         @include span-columns(4);
+        .grid-item-image,
+        .grid-item-description {
+          .grid-item-subtitle,
+          .grid-item-title {
+            text-align: center;
+          }
+        }
       }
     }
     #ipad-item div.grid-item-image {
       @include retina("../assets/illustration-ipad", 200px 160px);
     }
-    #mac-item div.grid-item-image {
-      @include retina("../assets/illustration-macbook", 200px 160px);
+    #watch-item div.grid-item-image {
+      @include retina("../assets/illustration-watch", 200px 160px);
     }
     #iphone-item div.grid-item-image {
       @include retina("../assets/illustration-iphone", 200px 160px);
