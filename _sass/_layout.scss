@@ -323,14 +323,14 @@ p {
         }
       }
     }
-    #ipad-item div.grid-item-image {
-      @include retina("../assets/illustration-ipad", 200px 160px);
+    #ios-item div.grid-item-image {
+      @include retina("../assets/illustration-ios", 200px 160px);
     }
     #watch-item div.grid-item-image {
       @include retina("../assets/illustration-watch", 200px 160px);
     }
-    #iphone-item div.grid-item-image {
-      @include retina("../assets/illustration-iphone", 200px 160px);
+    #tv-item div.grid-item-image {
+      @include retina("../assets/illustration-tv", 200px 160px);
     }
   }
 }
