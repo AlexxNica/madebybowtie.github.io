@@ -488,6 +488,21 @@ p {
   .viaplay {
     @include retina("../assets/client-viaplay", 200px 40px);
   }
+  .primepilot {
+    @include retina("../assets/client-primepilot", 200px 40px);
+  }
+  .glue {
+    @include retina("../assets/client-glue", 200px 40px);
+  }
+  .bontouch {
+    @include retina("../assets/friend-bontouch", 200px 40px);
+  }
+  .doberman {
+    @include retina("../assets/friend-doberman", 200px 40px);
+  }
+  .rga {
+    @include retina("../assets/friend-rga", 200px 40px);
+  }
 }
 
 #fifth {
