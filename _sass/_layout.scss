@@ -393,9 +393,9 @@ p {
 
   #whoweare {
     .grid-item {
-      @include span-columns(6);
-      @include media($mobile) {
-        @include span-columns(4);
+      @include span-columns(4);
+      @include media($tablet) {
+        @include span-columns(8);
       }
     }
     .grid-item-image {
@@ -411,6 +411,10 @@ p {
     #simon-item .grid-item-image {
       @include retina("../assets/simon", 100%);
     }
+    #edward-item .grid-item-image {
+      @include retina("../assets/edward", 100%);
+    }
+
 
     .grid-item-socials {
       margin-top: 20px;
