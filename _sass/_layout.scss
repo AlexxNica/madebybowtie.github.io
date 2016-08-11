@@ -494,6 +494,9 @@ p {
   .glue {
     @include retina("../assets/client-glue", 200px 40px);
   }
+  .soon {
+    @include retina("../assets/client-soon", 200px 40px);
+  }
   .bontouch {
     @include retina("../assets/friend-bontouch", 200px 40px);
   }
