@@ -497,6 +497,9 @@ p {
   .soon {
     @include retina("../assets/client-soon", 200px 40px);
   }
+  .lifesum {
+    @include retina("../assets/client-lifesum", 200px 40px);
+  }
   .bontouch {
     @include retina("../assets/friend-bontouch", 200px 40px);
   }
